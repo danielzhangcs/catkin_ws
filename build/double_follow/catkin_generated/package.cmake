@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "double_follow")
 set(double_follow_VERSION "0.0.0")
-set(double_follow_MAINTAINER "root <root@todo.todo>")
+set(double_follow_MAINTAINER "root <danielzhang@brandeis.edu>")
 set(double_follow_PACKAGE_FORMAT "2")
 set(double_follow_BUILD_DEPENDS "roscpp" "rospy" "tf2" "tf2_ros" "turtlesim")
 set(double_follow_BUILD_EXPORT_DEPENDS "roscpp" "rospy" "tf2" "tf2_ros" "turtlesim")
