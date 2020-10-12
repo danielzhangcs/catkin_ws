@@ -1,0 +1,8 @@
+prefix=/my_ros_data/catkin_ws/devel
+
+Name: raspicam_node
+Description: Description of raspicam_node
+Version: 0.4.0
+Cflags: -I/my_ros_data/catkin_ws/devel/include -I/my_ros_data/catkin_ws/src/Hands-On-ROS-for-Robotics-Programming/Chapter6_ROS_programming/pkg_raspicam_node/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime std_msgs

@@ -1,0 +1,2 @@
+set(mygopigo_MESSAGE_FILES "/my_ros_data/catkin_ws/src/Hands-On-ROS-for-Robotics-Programming/Chapter6_ROS_programming/pkg_mygopigo/msg/MotorStatus.msg;/my_ros_data/catkin_ws/src/Hands-On-ROS-for-Robotics-Programming/Chapter6_ROS_programming/pkg_mygopigo/msg/MotorStatusLR.msg")
+set(mygopigo_SERVICE_FILES "/my_ros_data/catkin_ws/src/Hands-On-ROS-for-Robotics-Programming/Chapter6_ROS_programming/pkg_mygopigo/srv/SPI.srv")

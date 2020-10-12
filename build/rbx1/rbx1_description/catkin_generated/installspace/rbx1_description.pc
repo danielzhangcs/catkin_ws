@@ -1,0 +1,8 @@
+prefix=/my_ros_data/catkin_ws/install
+
+Name: rbx1_description
+Description: Description of rbx1_description
+Version: 0.4.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

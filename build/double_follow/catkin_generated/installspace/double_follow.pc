@@ -1,0 +1,8 @@
+prefix=/my_ros_data/catkin_ws/install
+
+Name: double_follow
+Description: Description of double_follow
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

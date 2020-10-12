@@ -1,0 +1,8 @@
+prefix=/my_ros_data/catkin_ws/install
+
+Name: robot_services
+Description: Description of robot_services
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

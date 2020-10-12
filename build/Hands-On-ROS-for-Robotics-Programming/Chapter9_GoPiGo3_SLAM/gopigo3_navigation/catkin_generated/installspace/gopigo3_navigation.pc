@@ -1,0 +1,8 @@
+prefix=/my_ros_data/catkin_ws/install
+
+Name: gopigo3_navigation
+Description: Description of gopigo3_navigation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
