@@ -767,6 +767,12 @@ double_follow_SOURCE_DIR:STATIC=/my_ros_data/catkin_ws/src/double_follow
 //The directory containing a CMake configuration file for dynamic_reconfigure.
 dynamic_reconfigure_DIR:PATH=/opt/ros/melodic/share/dynamic_reconfigure/cmake
 
+//Value Computed by CMake
+follow_bot_BINARY_DIR:STATIC=/my_ros_data/catkin_ws/build/follow_bot
+
+//Value Computed by CMake
+follow_bot_SOURCE_DIR:STATIC=/my_ros_data/catkin_ws/src/follow_bot
+
 //The directory containing a CMake configuration file for gazebo.
 gazebo_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/gazebo
 
@@ -941,6 +947,12 @@ jsoncpp_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/jsoncpp
 
 //Path to a library.
 lib:FILEPATH=/opt/ros/melodic/lib/libxmlrpcpp.so
+
+//Value Computed by CMake
+line_follower_BINARY_DIR:STATIC=/my_ros_data/catkin_ws/build/line_follower
+
+//Value Computed by CMake
+line_follower_SOURCE_DIR:STATIC=/my_ros_data/catkin_ws/src/line_follower
 
 //The directory containing a CMake configuration file for map_server.
 map_server_DIR:PATH=/opt/ros/melodic/share/map_server/cmake
@@ -1563,7 +1575,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=47
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=48
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

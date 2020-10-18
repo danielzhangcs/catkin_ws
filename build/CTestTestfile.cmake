@@ -31,6 +31,7 @@ subdirs("Hands-On-ROS-for-Robotics-Programming/Chapter6_ROS_programming/pkg_rasp
 subdirs("rbx1/rbx1_bringup")
 subdirs("rbx1/rbx1_dynamixels")
 subdirs("rbx1/rbx1_vision")
+subdirs("follow_bot")
 subdirs("Hands-On-ROS-for-Robotics-Programming/Chapter12_Reinforcement_Learning/gopigo3_gazebo")
 subdirs("rbx1/rbx1_apps")
 subdirs("rbx1/rbx1_nav")
