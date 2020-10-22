@@ -9,12 +9,9 @@ class Follower:
     def __init__(self):
         # Initialise the Publisher and Subscriber topics for the follower node.
         self.bridge = cv_bridge.CvBridge()
-        cv2.namedWindow("window", 1)
 
-        self.image_sub = rospy.Subscriber('camera/rgb/image_raw',
-                                        Image, self.image_callback)
-
-        self.cmd_vel_pub = rospy.Publisher('cmd_vel', Twist, queue_size=1)
+        self.image_sub = rospy.Subscriber('camera/rgb/image_raw', Image, self.image_callback)
+        self.publisher = rospy.Publisher('cmd_vel', Twist, queue_size=1)
         self.twist = Twist()
 
     def image_callback(self, msg):
@@ -27,7 +24,7 @@ class Follower:
         '''
 
         # convert image data to openCV format
-        image = self.bridge.imgmsg_to_cv2(msg,desired_encoding='bgr8')
+        image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
 
         #convert to equivalent representation in the HSV space
         hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
@@ -54,14 +51,13 @@ class Follower:
 
             self.twist.linear.x = 0.1
             self.twist.angular.z = -float(err) / 1000
-            self.cmd_vel_pub.publish(self.twist)
+            self.publisher.publish(self.twist)
             
         else:
             self.twist.linear.x = 0
             self.twist.angular.z = 30*2*math.pi/360
-            self.cmd_vel_pub.publish(self.twist)
+            self.publisher.publish(self.twist)
             
-        cv2.imshow("window", image)
         cv2.waitKey(3)
 
 rospy.init_node('follower')
